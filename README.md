@@ -9,25 +9,46 @@ network.
 
 ## Install
 
+This repository is both a Claude Code plugin and its own marketplace. Inside Claude
+Code:
+
+```
+/plugin marketplace add GermanoDevelopment/solinpy-skill
+/plugin install solinpy-sdk@solinpy-skills
+```
+
+To pull later updates:
+
+```
+/plugin marketplace update solinpy-skills
+```
+
+### Without the plugin system
+
+Clone straight into your skills directory — the folder name becomes the skill name:
+
 ```bash
 git clone git@github.com:GermanoDevelopment/solinpy-skill.git ~/.claude/skills/solinpy-sdk
 ```
 
-The directory name matters: Claude Code resolves the skill by folder, so clone it as
-`solinpy-sdk`.
-
-Verify it loaded by asking Claude something like *"use solinpy to check a devnet
-wallet balance"* — the skill should trigger on its own.
+Either way, verify it loaded by asking Claude something like *"use solinpy to check a
+devnet wallet balance"* — the skill should trigger on its own.
 
 ## Layout
 
 ```
+.claude-plugin/
+├── plugin.json                # plugin manifest
+└── marketplace.json           # marketplace entry pointing at this repo root
 SKILL.md                       # always loaded: core flow, module map, guardrails
 references/
 ├── api-reference.md           # every public signature and return shape
 ├── anchor.md                  # IDL loading, Borsh types, 0.30+ compatibility
 └── pitfalls.md                # known defects with workarounds
 ```
+
+`SKILL.md` sits at the repo root rather than under `skills/`; the manifest's
+`"skills": "."` points Claude Code at the root directly.
 
 `SKILL.md` stays small on purpose. The reference files are read on demand, only when
 the task actually reaches Anchor programs or an obscure return shape.
