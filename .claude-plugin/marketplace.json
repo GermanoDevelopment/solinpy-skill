@@ -16,6 +16,7 @@
         "name": "GermanoDevelopment"
       },
       "repository": "https://github.com/GermanoDevelopment/solinpy-skill",
+      "license": "MIT",
       "keywords": ["solana", "solinpy", "python", "sdk", "web3", "anchor", "spl-token"],
       "category": "development"
     }

@@ -78,6 +78,10 @@ Written against **SolInPy 0.1.7**. The SDK is pre-1.0 and its API moves — when
 documented defect gets fixed upstream, update `pitfalls.md` in the same pass or the
 skill starts lying.
 
+## License
+
+MIT — see [LICENSE](LICENSE).
+
 ## Related
 
 - SDK source: [carcaras/solinpy](https://github.com/carcaras/solinpy)
