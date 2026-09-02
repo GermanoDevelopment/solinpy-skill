@@ -1,8 +1,8 @@
 {
   "name": "solinpy-skills",
   "owner": {
-    "name": "GermanoDevelopment",
-    "url": "https://github.com/GermanoDevelopment"
+    "name": "carcaras",
+    "url": "https://github.com/carcaras"
   },
   "description": "Claude Code skills for the SolInPy Solana Python SDK",
   "version": "0.1.0",
@@ -13,7 +13,7 @@
       "displayName": "SolInPy SDK",
       "description": "Skill for building Solana integrations with the SolInPy Python SDK: RPC, wallets, SPL tokens, account decoding, and Anchor programs.",
       "author": {
-        "name": "GermanoDevelopment"
+        "name": "carcaras"
       },
       "repository": "https://github.com/GermanoDevelopment/solinpy-skill",
       "license": "MIT",

@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "description": "Skill for building Solana integrations with the SolInPy Python SDK: RPC, wallets, SPL tokens, account decoding, and Anchor programs.",
   "author": {
-    "name": "GermanoDevelopment",
-    "url": "https://github.com/GermanoDevelopment"
+    "name": "carcaras",
+    "url": "https://github.com/carcaras"
   },
   "repository": "https://github.com/GermanoDevelopment/solinpy-skill",
   "license": "MIT",
